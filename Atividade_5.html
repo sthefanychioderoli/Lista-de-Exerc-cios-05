@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa que leia 20 números inteiros e armazene-os num vetor. Armazene
+        os números pares no vetor PAR e os números IMPARES no vetor impar. Imprima os
+        três vetores.</title>
+
+    <script>
+
+    var numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    var numeros_pares = []
+    var numeros_impares = []
+
+    for (posicao in numeros) {
+        if (numeros[posicao] % 2 == 0) {
+            numeros_pares.push(numeros[posicao])
+        }
+        else {
+            numeros_impares.push(numeros[posicao])
+        }
+    }
+    alert ("Números: " + numeros)
+    alert ("Números pares: " + numeros_pares)
+    alert ("Números impares: " + numeros_impares)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

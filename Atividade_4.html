@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa que leia um vetor de 10 caracteres, e diga quantas consoantes
+        foram lidas. Imprima as consoantes.</title>
+
+    <script>
+
+        var lista_letras = ["a","s", "l", "c", "e"]
+        var lista_vogais = [ "a", "e", "i", "o", "u"]
+        var lista_consoantes = []
+
+        for (posicao in lista_letras) {
+            if (lista_vogais.includes (lista_letras[posicao]) == false ) {
+                lista_consoantes.push(lista_letras[posicao])
+            }
+        }
+
+        alert ("Consoantes: " + lista_consoantes)
+        alert ("Quantidade de consoantes: " + lista_consoantes.length)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
